@@ -2,156 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Kirsten Peryer — Virtual Assistant & Vet Tech Services</title>
-  <meta name="description" content="Kirsten Peryer — Certified Veterinary Technician offering virtual assistant services, medical documentation review, scheduling, and admin support."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kirsten Peryer | Virtual Assistant</title>
+  <meta name="description" content="Virtual Assistant offering organized admin and client support. Reliable remote support focused on organization and clear communication.">
   <style>
-    :root{
-      --bg:#fbfbfc; --card:#ffffff; --muted:#6b7280; --accent:#0f766e; --accent-2:#065f46;
-      --radius:14px; --maxw:900px; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f8fa;
+      color: #333;
+      line-height: 1.6;
     }
-    *{box-sizing:border-box}
-    body{margin:0;background:linear-gradient(180deg,#f7f9fa 0%,#ffffff 100%);color:#0f172a;display:flex;align-items:center;justify-content:center;padding:28px 18px;min-height:100vh}
-    .wrap{width:100%;max-width:var(--maxw)}
-    header{display:flex;gap:16px;align-items:center;margin-bottom:18px}
-    .avatar{
-      width:86px;height:86px;border-radius:16px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:30px;flex:0 0 86px;box-shadow:0 6px 18px rgba(6,95,70,0.12)
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
-    .hdr-text{flex:1}
-    h1{margin:0;font-size:20px;letter-spacing:-0.2px}
-    .subtitle{color:var(--muted);margin-top:6px;font-size:14px}
-    .card{background:var(--card);border-radius:var(--radius);padding:20px;margin-bottom:14px;box-shadow:0 6px 20px rgba(2,6,23,0.06)}
-    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
-    @media(max-width:880px){.grid{grid-template-columns:1fr} .avatar{width:64px;height:64px;font-size:22px}}
-    .section-title{font-weight:700;margin:0 0 8px 0}
-    .list{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
-    .chip{background:#f1f5f4;color:#064e45;padding:6px 10px;border-radius:999px;font-size:13px}
-    p{color:#0f172a;margin:0 0 10px 0;line-height:1.45}
-    .services{display:flex;flex-direction:column;gap:10px}
-    .service{padding:10px;border-radius:10px;border:1px solid #eef2f1;background:linear-gradient(180deg,rgba(15,118,110,0.03),transparent)}
-    .cta{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
-    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600;font-size:14px}
-    .btn-ghost{border:1px solid #e6f4f3;background:white;color:var(--accent);padding:10px 12px;border-radius:10px;text-decoration:none;font-weight:600}
-    .right-col{display:flex;flex-direction:column;gap:12px}
-    .contact-row{display:flex;align-items:center;gap:10px}
-    .small{font-size:13px;color:var(--muted)}
-    .meta{display:flex;gap:12px;flex-wrap:wrap}
-    footer{margin-top:12px;color:var(--muted);font-size:13px;text-align:center}
-    .quote{font-style:italic;color:#064e45;background:#f0fdf4;padding:12px;border-radius:8px;border:1px solid #ecfdf3}
-    .rates{background:#fff7ed;padding:10px;border-radius:8px;border:1px solid #fff1e6;color:#92400e}
-    .kbd{background:#f3f4f6;padding:4px 8px;border-radius:6px;font-family:monospace}
+    h1 {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+    h2 {
+      margin-top: 40px;
+      font-size: 20px;
+    }
+    .subheading {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 25px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .contact {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #e9ecef;
+      border-radius: 6px;
+    }
+    a {
+      color: #0056b3;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
-  <main class="wrap" role="main">
-    <header>
-      <div class="avatar" aria-hidden="true">KP</div>
-      <div class="hdr-text">
-        <h1>Kirsten Peryer — Virtual Assistant & Certified Veterinary Technician</h1>
-        <div class="subtitle">Remote admin + vet-tech documentation support • short-term projects • flexible weekly hours</div>
-      </div>
-    </header>
+  <div class="container">
 
-    <div class="grid">
-      <!-- left column -->
-      <section>
-        <div class="card">
-          <p class="section-title">About me</p>
-          <p>
-            I’m a Certified Veterinary Technician (CVT) with hands-on clinical experience and strong admin & documentation skills. I help small practices and busy professionals with medical documentation review, appointment coordination, client communications, data entry, and light project work — all delivered remotely and reliably.
-          </p>
-
-          <p class="section-title" style="margin-top:12px">Core services</p>
-          <div class="services" aria-label="services offered">
-            <div class="service"><strong>Virtual assistant (general)</strong> — email management, scheduling, calendar coordination, travel/booking, client follow-ups.</div>
-            <div class="service"><strong>Medical documentation & scribe review</strong> — formatting, QA, clarity checks, non-clinical edits (I’m familiar with vet clinical notes and typical clinic workflows).</div>
-            <div class="service"><strong>Data entry & admin systems</strong> — spreadsheets, CSVs, intake form processing, inventory tracking, basic bookkeeping prep.</div>
-            <div class="service"><strong>Annotation / AI micro-tasks</strong> — text/audio transcription checks, annotation tasks and QA for training data (remote, detail-oriented).</div>
-          </div>
-
-          <div style="margin-top:12px">
-            <p class="section-title">Skills & tools</p>
-            <ul class="list" aria-hidden="false" style="margin-top:8px">
-              <li class="chip">Clinic workflows</li>
-              <li class="chip">Medical notes QA</li>
-              <li class="chip">Google Workspace</li>
-              <li class="chip">Microsoft Excel</li>
-              <li class="chip">Calendly / scheduling</li>
-              <li class="chip">Zoom & remote support</li>
-              <li class="chip">Attention to detail</li>
-            </ul>
-          </div>
-
-          <div style="margin-top:12px">
-            <p class="section-title">Approach</p>
-            <p class="small">Clear communication, dependable timelines, and thoughtful prioritisation. I prefer fixed weekly hours or small project batches (e.g., 3–10 hour blocks) that let me deliver consistent, high-quality work without context switching.</p>
-          </div>
-
-          <div style="margin-top:12px" class="meta">
-            <div class="rates"><strong>Availability</strong>: 6–12 hours/week (negotiable)</div>
-            <div class="rates"><strong>Typical rate</strong>: £/€/$ per hour (custom quotes available)</div>
-          </div>
-        </div>
-
-        <div class="card" style="margin-top:10px">
-          <p class="section-title">Testimonials & results</p>
-          <div style="display:flex;flex-direction:column;gap:8px">
-            <div class="quote">“Clear, reliable and detail-focused — Kirsten made our clinic notes searchable and consistent.” — Clinic Manager</div>
-            <div class="small" style="margin-top:8px">More references available on request.</div>
-          </div>
-        </div>
-
-        <div class="card" style="margin-top:10px">
-          <p class="section-title">Quick samples / portfolio</p>
-          <p class="small">Available on request: example appointment templates, anonymised note QA checklist, sample spreadsheet automations, and a 1-page process doc I create for every client.</p>
-        </div>
-      </section>
-
-      <!-- right column -->
-      <aside class="right-col">
-        <div class="card">
-          <p class="section-title">Contact & booking</p>
-          <div class="contact-row"><strong>Email:</strong> <a href="mailto:youremail@example.com" style="color:var(--accent)">youremail@example.com</a></div>
-          <div class="contact-row"><strong>Phone (text):</strong> <a href="tel:+441234567890" style="color:var(--accent)">+44 1234 567 890</a></div>
-          <div class="contact-row"><strong>Book a quick chat:</strong> <a class="btn-ghost" href="https://calendly.com/yourname/15">15-minute chat</a></div>
-
-          <div style="margin-top:10px">
-            <p class="small">Prefer referral or message first? Email with a brief note and I’ll reply within 48 hours on weekdays.</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <p class="section-title">How I work</p>
-          <p class="small">I follow clear onboarding: brief intake form → 1-hour setup call → agreed task list + trial week → ongoing weekly schedule. I invoice monthly and accept bank transfer / PayPal.</p>
-        </div>
-
-        <div class="card">
-          <p class="section-title">Share / QR</p>
-          <p class="small">To create a QR for this page, point it at the page URL (example below). Put the QR on a business card and use the short URL underneath for typing.</p>
-          <div style="margin-top:8px">
-            <img id="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https%3A%2F%2Fexample.com" alt="QR code sample" style="width:160px;height:160px;border-radius:8px;display:block"/>
-            <div style="margin-top:8px"><span class="small">Short URL: <span class="kbd">yourdomain.co/kirsten</span></span></div>
-          </div>
-        </div>
-
-        <div class="card">
-          <p class="section-title">Business card text (suggestion)</p>
-          <p class="small"><strong>Kirsten Peryer</strong><br/>Virtual Assistant & CVT — medical documentation + admin support<br/><span class="kbd">yourdomain.co/kirsten</span><br/>Scan the QR to view services & book a chat</p>
-        </div>
-      </aside>
+    <h1>Virtual Assistant | Organized Admin & Client Support</h1>
+    <div class="subheading">
+      Helping small teams and business owners stay organized, responsive, and well-supported behind the scenes.
     </div>
 
-    <footer>
-      <div>© <span id="year"></span> Kirsten Peryer • Remote • Available for short weekly engagements</div>
-    </footer>
-  </main>
+    <div class="section">
+      <p>
+        I combine strong administrative systems with a personable, client-focused approach. 
+        Whether coordinating schedules, managing records, or responding to enquiries, 
+        I prioritize clarity, warmth, and reliability. 
+        My goal is to make both the workflow and the client experience feel smooth and well-supported.
+      </p>
+    </div>
 
-  <script>
-    // fill year
-    document.getElementById('year').textContent = new Date().getFullYear();
+    <h2>Core Services</h2>
+    <div class="section">
+      <ul>
+        <li><strong>Virtual Assistant (General Admin)</strong> — Email management, scheduling, calendar coordination, travel booking, and client follow-ups.</li>
+        <li><strong>Client Communication & Correspondence</strong> — Customer response emails, inbox triage, enquiry handling, and thoughtful follow-up.</li>
+        <li><strong>Data Entry & Admin Systems</strong> — Spreadsheets, record management, intake processing, tracking systems, and light bookkeeping preparation.</li>
+        <li><strong>Document Review & Quality Assurance</strong> — Formatting, proofreading, clarity checks, structured note review (including scribe review), and process documentation.</li>
+        <li><strong>Website & Social Media Updates</strong> — Uploading blog posts, updating website content, formatting newsletters, and posting pre-prepared social media content.</li>
+        <li><strong>Research & Information Tracking</strong> — Online research, compiling reports, maintaining listings, and monitoring updates.</li>
+        <li><strong>Annotation & Detail-Based Tasks</strong> — Text/audio transcription checks and structured QA work for training or data projects.</li>
+      </ul>
+    </div>
 
-    // Optional: swap QR src with your real URL (instruction below)
-    // Example: document.getElementById('qr').src = 'https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=' + encodeURIComponent('https://yourdomain.co/kirsten');
-  </script>
+    <h2>About</h2>
+    <div class="section">
+      <p>
+        I’m an experienced administrative professional with a background spanning media, nonprofit organizations, film production support, and animal healthcare environments.
+      </p>
+      <p>
+        After earning a BA (Hons) in Humanities from the University of Ulster, I worked in Northern Ireland supporting local government media monitoring, nonprofit communications, and training administration in the film sector — roles that required organization, discretion, and clear written communication.
+      </p>
+      <p>
+        After relocating to the United States, I combined professional work in animal healthcare with long-term volunteer leadership in schools and Scouts, coordinating schedules, managing records, and supporting complex communication across families and teams.
+      </p>
+      <p>
+        Alongside strong organizational systems, I bring a personable and reassuring communication style. I’m comfortable speaking with clients, responding thoughtfully to enquiries, and helping people feel informed and at ease.
+      </p>
+      <p>
+        I now provide remote virtual assistant support with calm efficiency, attention to detail, and a steady, approachable presence behind the scenes.
+      </p>
+    </div>
+
+    <div class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+      <p>Available for part-time remote work.</p>
+    </div>
+
+  </div>
 </body>
 </html>
